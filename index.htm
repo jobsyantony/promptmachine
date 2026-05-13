@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prompt Machine Tool Re-Conditioners</title>
+
+<style>
+
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: #eee;
+  text-align: center;
+  padding: 40px;
+}
+
+/* ---------- SLIDER ---------- */
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.slides {
+  display: flex;
+  animation: slide 15s infinite;
+}
+
+.slides img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(-100%);}
+  50% {transform: translateX(-200%);}
+  75% {transform: translateX(-300%);}
+  100% {transform: translateX(0);}
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 15px;
+}
+
+img {
+  width: 100%;
+}
+
+/* ---------- CONTACT ---------- */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">⚙️ Prompt Machine Tools</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Prompt Machine Tool Re-Conditioners</h1>
+  <p>Experts in CNC Machine Reconditioning</p>
+</div>
+
+<!-- IMAGE SLIDER -->
+<div class="slider">
+  <div class="slides">
+    <img src="https://cdn.pixabay.com/photo/2016/01/20/11/10/milling-1151344_1280.jpg">
+    <img src="https://c8.alamy.com/comp/KMHF9T/machinery-industry-lathe-machine-at-metal-manufacturing-KMHF9T.jpg">
+    <img src="https://4.imimg.com/data4/DM/QU/MY-1129710/industrial-milling-machine-1000x1000.jpg">
+    <img src="https://www.yogometal.com/wp-content/uploads/2022/10/CNC-machining-workshop.jpeg">
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ABOUT -->
+<div id="about" class="card">
+  <h2>About Us</h2>
+  <p>
+    We are a leading CNC machine reconditioning company specializing in lathe,
+    milling machines and industrial machining solutions.
+  </p>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="card">
+  <h2>Services</h2>
+  <ul>
+    <li>CNC Machine Reconditioning</li>
+    <li>Lathe Machine Repair</li>
+    <li>Milling Machine Service</li>
+    <li>Retrofitting</li>
+    <li>Preventive Maintenance</li>
+  </ul>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery" class="card">
+  <h2>Gallery</h2>
+  <div class="grid">
+    <img src="https://media.istockphoto.com/id/614644604/photo/cutting-tool-at-mechanical-turning-metal-working.jpg">
+    <img src="https://c8.alamy.com/comp/PYJJK1/lathe-industrial-machine-PYJJK1.jpg">
+    <img src="https://thumbs.dreamstime.com/z/lathe-machine-industrial-modern-factory-249708555.jpg">
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="card">
+  <h2>Contact Us</h2>
+
+  <form action="mailto:info@promptmachinetools.com" method="post" enctype="text/plain">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <h3>Location</h3>
+  <!-- GOOGLE MAP -->
+  <iframe 
+    src="https://maps.google.com/maps?q=bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="300" style="border:0;">
+  </iframe>
+
+</div>
+
+</div>
+
+</body>
+</html>
