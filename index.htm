@@ -1,201 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Prompt Machine Tool Re-Conditioners</title>
 
-<style>
 
-/* ---------- GLOBAL ---------- */
-body {
-  margin: 0;
-  font-family: Arial;
+        </p>
+      </section>
+
+      {/* Services */}
+      <section className="bg-white p-10">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl font-semibold mb-6">Services</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {["Machine Tool Reconditioning","Retrofit & Upgrades","Preventive Maintenance","Alignment & Calibration","Spindle Repair","Electrical Refurbishment"].map((service, index) => (
+              <Card key={index} className="rounded-2xl shadow-md">
+                <CardContent className="p-5">
+                  <h3 className="font-medium text-lg">{service}</h3>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+
+
+            <p><strong>Email:</strong> info@promptmachinetools.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Location:</strong> Bangalore, India</p>
+          </div>
+          <div className="bg-gray-200 rounded-2xl p-6">
+            <p className="text-gray-500">Contact form / Map space</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-blue-900 text-white text-center p-4">
+        <p>© 2026 Prompt Machine Tool Re-Conditioners. All Rights Reserved.</p>
+      </footer>
+    </div>
+  );
 }
-
-.container {
-  width: 90%;
-  margin: auto;
-}
-
-/* ---------- NAVBAR ---------- */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
-  color: white;
-  padding: 10px 20px;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.nav-links a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-/* ---------- HERO ---------- */
-.hero {
-  background: #eee;
-  text-align: center;
-  padding: 40px;
-}
-
-/* ---------- SLIDER ---------- */
-.slider {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-}
-
-.slides {
-  display: flex;
-  animation: slide 15s infinite;
-}
-
-.slides img {
-  width: 100%;
-}
-
-@keyframes slide {
-  0% {transform: translateX(0);}
-  25% {transform: translateX(-100%);}
-  50% {transform: translateX(-200%);}
-  75% {transform: translateX(-300%);}
-  100% {transform: translateX(0);}
-}
-
-/* ---------- CARDS ---------- */
-.card {
-  background: #f9f9f9;
-  padding: 20px;
-  margin: 20px 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 15px;
-}
-
-img {
-  width: 100%;
-}
-
-/* ---------- CONTACT ---------- */
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-button {
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  border: none;
-}
-
-/* ---------- MOBILE ---------- */
-@media (max-width: 600px) {
-  .nav-links {
-    display: none;
-  }
-}
-
-</style>
-
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-<div class="navbar">
-  <div class="logo">⚙️ Prompt Machine Tools</div>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-  <h1>Prompt Machine Tool Re-Conditioners</h1>
-  <p>Experts in CNC Machine Reconditioning</p>
-</div>
-
-<!-- IMAGE SLIDER -->
-<div class="slider">
-  <div class="slides">
-    <img src="./bb1.jpg">
-    <img src="./bb2.jpg">
-    <img src="./bb3.jpg">
-    
-      </div>
-</div>
-
-<div class="container">
-
-<!-- ABOUT -->
-<div id="about" class="card">
-  <h2>About Us</h2>
-  <p>
-    We are a leading CNC machine reconditioning company specializing in lathe,
-    milling machines and industrial machining solutions.
-  </p>
-</div>
-
-<!-- SERVICES -->
-<div id="services" class="card">
-  <h2>Services</h2>
-  <ul>
-    <li>CNC Machine Reconditioning</li>
-    <li>Lathe Machine Repair</li>
-    <li>Milling Machine Service</li>
-    <li>Retrofitting</li>
-    <li>Preventive Maintenance</li>
-  </ul>
-</div>
-
-<!-- GALLERY -->
-<div id="gallery" class="card">
-  <h2>Gallery</h2>
-  <div class="grid">
-    <img src="./bb1.jpg">
-    <img src="./bb2.jpg">
-    <img src="./bb3.jpg">
-  </div>
-</div>
-
-<!-- CONTACT -->
-<div id="contact" class="card">
-  <h2>Contact Us</h2>
-
-  <form action="mailto:info@promptmachinetools.com" method="post" enctype="text/plain">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-
-  <h3>Location</h3>
-  <!-- GOOGLE MAP -->
-  <iframe 
-    src="https://maps.google.com/maps?q=bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed"
-    width="100%" height="300" style="border:0;">
-  </iframe>
-
-</div>
-
-</div>
-
-</body>
-</html>
