@@ -1,230 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>coming soon</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prompt Engineering Solutions">
+  <title>Prompt Engineering Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Prompt Machine <br>Tool Re-conditioners</b></h3>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">P</span>
+      <span class="brand-copy"><strong>PROMPT</strong><small>Engineering Solutions</small></span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="#services">What We Do</a>
+      <a href="journey.html">Our Journey</a>
+      <a href="#contact" class="nav-cta">Talk to us</a>
+    </nav>
   </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#SnapShots" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SnapShots</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
-    <a href="#designs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designs</a> 
-    <a href="#Awards" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Awards</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Prompt Machine Tool Re-conditioners</span>
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="Snapshot">
-    <h1 class="w3-jumbo"><b>Prompt Machine Tool Re-conditioners</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>SnapShot.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
-  
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="./bb1.jpg" style="width:100%" onclick="onClick(this)" alt="Factory">
-      <img src="./bb2.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight">
-      <img src="./bb3.jpg" style="width:100%" onclick="onClick(this)" alt=" Main walls">
-    </div>
-
-    <div class="w3-half">
-      <img src="./aa1.webp" style="width:100%" onclick="onClick(this)" alt="material 1 atrium">
-      <img src="./aa2.webp" style="width:100%" onclick="onClick(this)" alt="material 2 space">
-      <img src="./aa3.webp" style="width:100%" onclick="onClick(this)" alt="Material 3 design">
+<main>
+<section class="hero">
+  <div class="hero-bg"></div><div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <span class="eyebrow light">25+ YEARS OF ENGINEERING EXCELLENCE</span>
+    <h1>Engineering Solutions<br>That Keep Industry Moving</h1>
+    <p>25+ years of expertise in machine reconditioning, precision machining, reverse engineering, SPM manufacturing, low-cost automation and industrial fabrication.</p>
+    <div class="hero-actions">
+      <a href="#services" class="btn btn-primary">Explore capabilities</a>
+      <a href="journey.html" class="btn btn-secondary">Our journey →</a>
     </div>
   </div>
+</section>
 
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
+<section class="stats">
+  <div class="container stats-grid">
+    <div><strong>25+</strong><span>Years Experience</span></div>
+    <div><strong>60+</strong><span>Customers Served</span></div>
+    <div><strong>22+</strong><span>Engineering Professionals</span></div>
+    <div><strong>24×7</strong><span>Operational Support</span></div>
+    <div><strong>1.6 m</strong><span>Machining Capacity</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container two-col">
+    <div><span class="eyebrow">PRACTICAL ENGINEERING. MEASURABLE IMPACT.</span><h2>Built on experience.<br>Driven by engineering.</h2></div>
+    <div class="lead-copy">
+      <p>At Prompt, we transform engineering challenges into reliable, practical and cost-effective solutions.</p>
+      <p>From critical machinery spare parts and reverse-engineered components to customised machines, automation and industrial fabrication, we partner with businesses to improve machine life, reduce downtime and enhance productivity.</p>
     </div>
   </div>
+</section>
 
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We are a  Tool Re-condioning service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - What We Do & What We Offer
-We provide high-quality solutions and services designed to support business growth and operational efficiency. Our focus is on delivering reliable, scalable, and innovative solutions that help organizations achieve their goals.
-We specialize in offering tailored services that address specific client needs, ensuring optimal performance and measurable results. Our team is dedicated to maintaining excellence through continuous improvement, strong work ethics, and a customer-centric approach.
-We work collaboratively with our clients to understand their requirements, implement effective strategies, and deliver outcomes that add real value. Our commitment is to quality, efficiency, and long-term success for every engagement.
-    </p>
+<section class="section-tight">
+  <div class="container photo-grid">
+    <figure class="photo"><img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1200&q=85" alt="Industrial machining workshop"><figcaption>Precision manufacturing</figcaption></figure>
+    <figure class="photo"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=85" alt="Metalworking machinery"><figcaption>Machine reconditioning</figcaption></figure>
+    <figure class="photo"><img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=85" alt="Engineer working in industry"><figcaption>Engineering expertise</figcaption></figure>
   </div>
-  
-  <!-- Designers -->
-  <div class="w3-container" id="Awards" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Awards.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>We are committed to delivering quality services that support efficiency and reliability. Our work focuses on continuous improvement, ensuring that every effort contributes to meaningful and effective outcomes.
-We strive to apply the best practices in our work, using our skills and expertise to provide solutions that meet client expectations. Our approach involves dedication, consistent effort, and attention to detail to ensure successful results.
-We aim to create value through our services by maintaining high standards, working collaboratively, and delivering outcomes that are both practical and beneficial.
-    </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
-  </div>
+</section>
 
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="./bb2.jpg" alt="Jen" style="width:100%">
-        <div class="w3-container">
-          <h3>Tital</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>We possess a strong understanding of our domain and maintain well-structured systems. Our approach ensures stability and consistency, contributing to well-organized and effective outcomes.</p>
-        </div>
-      </div>
+<section id="services" class="services section">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">WHAT WE DO</span><h2>Engineering capabilities built around your production needs.</h2></div>
+      <p>From restoring critical equipment to developing purpose-built machines, our focus is dependable performance, practical design and long-term value.</p>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>J</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="./bb3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Miaoss</h3>
-          <p class="w3-opacity">Arc</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
+    <div class="service-grid">
+      <article class="service-card"><span>01</span><h3>Machine Reconditioning</h3><p>Restore worn machinery, improve performance and extend equipment life with engineered repair and refurbishment.</p></article>
+      <article class="service-card"><span>02</span><h3>Precision Machining</h3><p>Accurate machining of critical parts, prototypes and production components with capacity up to 1.6 metres.</p></article>
+      <article class="service-card"><span>03</span><h3>Reverse Engineering</h3><p>Recreate hard-to-source or obsolete components from existing parts, samples and operational requirements.</p></article>
+      <article class="service-card"><span>04</span><h3>SPM Manufacturing</h3><p>Special Purpose Machines designed around your process to improve quality, throughput and repeatability.</p></article>
+      <article class="service-card"><span>05</span><h3>Low-Cost Automation</h3><p>Practical automation solutions that reduce manual effort and improve production efficiency.</p></article>
+      <article class="service-card"><span>06</span><h3>Industrial Fabrication</h3><p>Robust fabrication for machine structures, frames, platforms and customised assemblies.</p></article>
+      <article class="service-card"><span>07</span><h3>Custom Tooling</h3><p>Specialised jigs, fixtures and tooling engineered for accuracy, consistency and reliability.</p></article>
     </div>
   </div>
+</section>
 
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="Tech Support" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Tech Support.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16">planning</li>
-        <li class="w3-padding-16"> support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">meachanical design</li>
-        <li class="w3-padding-16">Good </li>
-        <li class="w3-padding-16">
-          <h2>Terms</h2>
-          <span class="w3-opacity">Annual Maintanance Contract</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">suppliers</button>
-        </li>
-      </ul>
-    </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">planning</li>
-        <li class="w3-padding-16">support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">Design</li>
-        <li class="w3-padding-16">Achivements</li>
-        <li class="w3-padding-16">
-          <h2>Teams</h2>
-          <span class="w3-opacity">Acts</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
+<section class="section">
+  <div class="container">
+    <div class="section-head compact"><div><span class="eyebrow">SHOP FLOOR TO SOLUTION</span><h2>Precision in every stage.</h2></div></div>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=85" alt="Engineer at work">
+      <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=85" alt="Industrial engineering operation">
+      <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=900&q=85" alt="Industrial machine equipment">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85" alt="Precision technology detail">
     </div>
   </div>
-  
-  <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>  
+</section>
+
+<section id="contact" class="cta section">
+  <div class="container cta-box">
+    <div><span class="eyebrow light">READY TO SOLVE A MANUFACTURING CHALLENGE?</span><h2>Let’s build the right solution.</h2></div>
+    <a href="mailto:info@promptengineering.com" class="btn btn-light">Start a conversation →</a>
   </div>
+</section>
+</main>
 
-<!-- End page content -->
-</div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by - JA Team <a href="https://www.w3schools.com/w3css/default.asp" title="JA Team" target="_blank" class="w3-hover-opacity">JA Team</a></p></div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-
+<footer>
+  <div class="container footer-grid">
+    <div class="brand footer-brand"><span class="brand-mark">P</span><span class="brand-copy"><strong>PROMPT</strong><small>Engineering Solutions</small></span></div>
+    <p>Precision machining • Reverse engineering • SPM • Automation • Fabrication</p>
+    <p>© <span class="year"></span> Prompt Engineering Solutions</p>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
