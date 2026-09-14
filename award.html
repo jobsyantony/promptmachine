@@ -64,5 +64,78 @@
   </div>
 </footer>
 <script src="script.js"></script>
+  <!-- ────────────────────────────── LIGHTBOX ── -->
+<div id="lightbox">
+  <span id="lightbox-close" onclick="closeLightbox()">✕</span>
+  <img id="lightbox-img" src="" alt="Gallery image" />
+</div>
+
+<!-- ────────────────────────────── SCROLL TOP ── -->
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+  /* Year */
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* Hamburger */
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  /* Active nav on scroll */
+  const sections = document.querySelectorAll('section[id]');
+  const navAs    = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) current = s.id; });
+    navAs.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+    document.getElementById('scroll-top').classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  /* Slideshow */
+  const slides = document.querySelectorAll('.slide');
+  const dots   = document.querySelectorAll('.slide-dot');
+  let current  = 0;
+  let timer    = null;
+
+  function slideshowGoto(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    resetTimer();
+  }
+  function slideshowStep(dir) { slideshowGoto(current + dir); }
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => slideshowStep(1), 5000);
+  }
+  resetTimer();
+
+  /* Lightbox */
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  /* Form submit placeholder */
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    alert('Thank you for your enquiry!\n\nNote: To activate this form, please connect it to a backend email service.');
+  }
+
 </body>
 </html>
